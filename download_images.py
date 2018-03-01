@@ -20,6 +20,4 @@ for c in categories:
 	for i in range(1,num_images_per_category+1):
 		path = 'http://www.vision.caltech.edu/Image_Datasets/Caltech256/images/%03d.%s/%03d_%04d.jpg' % (c[0], c[1], c[0], i)
 		print "download %s"%path
-		urllib.urlretrieve(path, "%s/%s-%04d.jpg " % (root_dir, c[1], i))
-
-
+		urllib.urlretrieve(path, "%s/%s-%04d.jpg" % (root_dir, c[1], i))
